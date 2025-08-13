@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>DMS — Pair Your Number</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <main class="card">
+    <h1>🔗 DMS Pairing</h1>
+    <p>Enter your WhatsApp number with country code (digits only):</p>
+
+    <form id="pairForm">
+      <input id="phone" type="tel" placeholder="e.g. 2349070810971" required minlength="6" maxlength="15" pattern="\\d+" />
+      <button type="submit">Get Pairing Code</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Your Pairing Code</h2>
+      <p class="code" id="code">—</p>
+      <ol>
+        <li>Open WhatsApp ➜ <b>Linked Devices</b></li>
+        <li>Tap <b>Link a Device</b></li>
+        <li>Choose <b>Link with phone number</b> (if shown)</li>
+        <li>Enter the code above</li>
+      </ol>
+      <p class="note">Keep this tab open for a bit while linking.</p>
+    </div>
+
+    <footer>
+      <span id="brand"></span>
+    </footer>
+  </main>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
